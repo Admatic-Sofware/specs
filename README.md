@@ -73,5 +73,48 @@ class ExampleBannerViewController: UIViewController, BannerViewDelegate {
   }
     
   ...Other Codes...
+  
 }</code></pre>
 
+### Interstitial
+
+After importing the PixadSDK on the page where you will display interstitial ads, you must define a InterstitialViewController. Then, after determining the various properties of this InterstitialViewController, you can show it. An example InterstitialViewController representation should be as follows:
+
+<pre><code>
+import UIKit
+import PixadSDK
+
+class ExampleInterstitialViewController: UIViewController, InterstitialViewDelegate {
+  
+  private var interstitialViewController: InterstitialViewController!
+    
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  
+    interstitialViewController = InterstitialViewController()
+    interstitialViewController.delegate = self
+    interstitialViewController.loadAd()
+  }
+    
+  ...Other Codes...
+  
+}</code></pre>
+
+You can show the ad you uploaded in the following ways.
+
+<pre><code>
+  //You can use this line
+  interstitialViewController.showAd()
+
+  //You can use button for show
+  @IBAction func showInterstitial(_ sender: Any) {
+    if interstitialViewController.getReady() {
+      interstitialViewController.showAd()
+    }
+  }
+
+  //You can use this callback function for show
+  func interstitialDidReceiveAd(_ interstitial: InterstitialViewController) {
+    interstitialViewController.showAd()
+  }
+</code></pre>
