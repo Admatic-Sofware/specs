@@ -4,7 +4,7 @@ Pixad iOS SDK
 ## Usage
 Add the following line to the top of your podfile
 
-<pre><code>source 'https://github.com/bakicam/specs.git'</code></pre>
+<pre><code>source 'https://github.com/Admatic-Sofware/specs.git'</code></pre>
 
 Add the following line inside the Target block
 
