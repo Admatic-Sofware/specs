@@ -45,3 +45,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
 }  
 </code></pre>
+
+### Banner
+
+After importing the PixadSDK on the page where you will display banner ads, you must define a BannerView. Then, after determining the size and various properties of this BannerView, you can show it by adding it to a view. An example BannerView representation should be as follows:
+
+<pre><code>
+import UIKit
+import PixadSDK
+
+class ExampleBannerViewController: UIViewController, BannerViewDelegate {
+  //You should add this function
+  func bannerViewPresentationController() -> UIViewController? {
+    self
+  }
+  
+  private var bannerView: BannerView!
+  @IBOutlet weak var adView: UIView!
+    
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  
+    bannerView = BannerView(frame: CGRect(x: .zero, y: .zero, width: 300, height: 250))
+    bannerView.delegate = self
+    adView.addSubview(bannerView)
+    bannerView.loadAd()
+  }
+    
+  ...Other Codes...
+}</code></pre>
+
