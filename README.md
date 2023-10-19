@@ -6,7 +6,7 @@ Add the following line to the top of your `Podfile`
 
 <pre><code>source 'https://github.com/Admatic-Sofware/specs.git'</code></pre>
 
-Add the following line inside the Target block
+Add the following line inside the `Target` block
 
 <pre><code>pod 'Pixad', '1.0.0'</code></pre>
 
