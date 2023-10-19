@@ -14,7 +14,7 @@ Finally run the following command
 
 <pre><code>pod install --repo-update</code></pre>
 
-### Integration
+### Initialize
 
 After importing PixadSDK in your `AppDelegate` file, you can start the integration by using the following lines in the `application didFinishLaunchingWithOptions` function. An example `AppDelegate` file should look like this:
 
