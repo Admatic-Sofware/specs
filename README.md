@@ -2,7 +2,7 @@
 Pixad iOS SDK
 
 ## Usage
-Add the following line to the top of your podfile
+Add the following line to the top of your `Podfile`
 
 <pre><code>source 'https://github.com/Admatic-Sofware/specs.git'</code></pre>
 
