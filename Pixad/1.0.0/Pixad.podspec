@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'Pixad'
   s.version      = '1.0.0'
   s.summary      = 'Pixad iOS SDK'
-  s.description  = 'Pixad reklamlarını görüntülemek için Mobil Reklam yöneticisi'
+  s.description  = 'Mobile Ad manager to display Pixad ads'
   s.homepage     = 'https://pixad.com.tr/'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Pixad' => 'info@pixad.com.tr' }
