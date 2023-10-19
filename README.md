@@ -31,7 +31,7 @@ After importing PixadSDK in your `AppDelegate` file, you can start the integrati
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        try! Pixad.shared.setPixadURL(urlString: ".")
+        try! Pixad.shared.setPixadURL(urlString: "*")
         
         Pixad.initializeSDK { status, error in
             if let error = error {
