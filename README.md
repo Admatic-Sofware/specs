@@ -21,29 +21,27 @@ After importing PixadSDK in your `AppDelegate` file, you can start the integrati
 `The keyword provided by Pixad should be used instead of *`
 
 <pre><code>
-  import UIKit
-  import PixadSDK
+import UIKit
+import PixadSDK
 
-  @main
-  class AppDelegate: UIResponder, UIApplicationDelegate {
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        try! Pixad.shared.setPixadURL(urlString: "*")
+    try! Pixad.shared.setPixadURL(urlString: "*")
         
-        Pixad.initializeSDK { status, error in
-            if let error = error {
-                print("Hata: \(error.localizedDescription)")
-                return
-            }
-            print("SDK Integration Successful: \(status)")
+    Pixad.initializeSDK { status, error in
+      if let error = error {
+        print("Error: \(error.localizedDescription)")
+          return
         }
-        
-        return true
-    }
+        print("SDK Integration Successful: \(status)")
+      }  
+      return true
+  }
   
-    ...Other Functions...
-  }  
+  ...Other Functions...
+  
+}  
 </code></pre>
