@@ -103,18 +103,18 @@ class ExampleInterstitialViewController: UIViewController, InterstitialViewDeleg
 You can show the ad you uploaded in the following ways.
 
 <pre><code>
-  //You can use this line
-  interstitialViewController.showAd()
+//You can use this line
+interstitialViewController.showAd()
 
-  //You can use button for show
-  @IBAction func showInterstitial(_ sender: Any) {
-    if interstitialViewController.getReady() {
-      interstitialViewController.showAd()
-    }
-  }
-
-  //You can use this callback function for show
-  func interstitialDidReceiveAd(_ interstitial: InterstitialViewController) {
+//You can use button for show
+@IBAction func showInterstitial(_ sender: Any) {
+  if interstitialViewController.getReady() {
     interstitialViewController.showAd()
   }
+}
+
+//You can use this callback function for show
+func interstitialDidReceiveAd(_ interstitial: InterstitialViewController) {
+  interstitialViewController.showAd()
+}
 </code></pre>
