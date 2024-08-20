@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Pixad' => 'info@pixad.com.tr' }
   s.platform     = :ios, '12.0'
-  s.source       = { :http => 'https://static.cdn.pixad.com.tr/SDK/Pixad-1.0.1.zip' }
+  s.source       = { :http => 'https://static.cdn.pixad.com.tr/SDK/Pixad-1.0.2.zip' }
 
   s.vendored_frameworks = 'Pixad/PixadSDK.xcframework'
   s.static_framework = true
