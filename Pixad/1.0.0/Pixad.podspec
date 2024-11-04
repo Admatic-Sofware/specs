@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Pixad'
-  s.version      = '1.0.0'
+  s.version      = '0.0.1'
   s.summary      = 'Pixad iOS SDK'
   s.description  = 'Mobile Ad manager to display Pixad ads'
   s.homepage     = 'https://pixad.com.tr/'
