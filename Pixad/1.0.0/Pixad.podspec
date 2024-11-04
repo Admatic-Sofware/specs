@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = 'Pixad'
-  s.version      = '999.0.4'
+  s.version      = '999.0.5'
   s.summary      = 'Pixad iOS SDK'
   s.description  = 'Mobile Ad manager to display Pixad ads'
   s.homepage     = 'https://pixad.com.tr/'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Pixad' => 'info@pixad.com.tr' }
   s.platform     = :ios, '12.0'
-  s.source       = { :http => 'https://static.cdn.pixad.com.tr/SDK/Pixad-999.0.4.zip' }
+  s.source       = { :http => 'https://static.cdn.pixad.com.tr/SDK/Pixad-999.0.5.zip' }
 
   s.vendored_frameworks = 'Pixad/PixadSDK.xcframework'
   s.static_framework = true
