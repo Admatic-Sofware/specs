@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
   }
 
   s.vendored_frameworks = 'Pixad/PixadSDK.xcframework'
+  s.static_framework = true
 end
