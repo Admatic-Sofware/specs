@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.license          = {
     :type => 'Apache-2.0',
-    :file => 'LICENSE'
+    :file => 'Pixad/LICENSE.txt'
   }
 
   s.author           = {
